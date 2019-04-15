@@ -10,7 +10,9 @@
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam;'>
-		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+		<a-entity obj-model=”obj: url(../models/houde2.obj); 
+            	mtl: url(../models/houde2.mtl)”>
+        	</a-entity>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
     </body>
